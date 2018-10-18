@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardback"
+
     >
 
     <android.support.v7.widget.CardView
@@ -19,47 +19,71 @@
         android:layout_marginTop="20dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="16dp"
-        app:contentPadding="30dp"
-        app:cardBackgroundColor="@color/layoutBack"
+        app:contentPadding="15dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN HERE"
+                android:textColor="@color/layoutText"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
                     <EditText
-                        android:layout_marginTop="10dp"
+
                         android:id="@+id/edit1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/userid"
                         android:inputType="text"
-                        android:background="@drawable/shape"
-                        android:padding="5dp"
                         />
-
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
                     <EditText
-                        android:layout_marginTop="30dp"
+
                         android:id="@+id/edit2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/password"
                         android:inputType="textWebPassword"
-                        android:background="@drawable/shape"
-                        android:padding="5dp"
                         />
+            </android.support.design.widget.TextInputLayout>
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/checkBox"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 />
-                    <Button
-                        android:id="@+id/loginBtn"
-                        android:layout_marginTop="30dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/logintxt"/>
+            <ImageButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/imgback"/>
+            <TextView
+                android:id="@+id/register_link"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@color/layoutBack"
+                android:textSize="15dp"/>
+
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
@@ -67,11 +91,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:gravity="bottom"
-        android:textSize="15sp"
-        android:textAlignment="center"
-        android:layout_marginBottom="10dp"
         android:text="@string/content"
-        android:textColor="@android:color/background_light" />
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
 
 </RelativeLayout>

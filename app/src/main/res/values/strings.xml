@@ -12,4 +12,5 @@
     <string name="logintxt">Login to the app</string>
     <string name="password">Enter the password</string>
     <string name="userid">Enter the UserId</string>
+    <string name="register">To Register Click Here!</string>
 </resources>

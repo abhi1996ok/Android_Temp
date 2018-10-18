@@ -2,9 +2,10 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#349c2f</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#080808</color>
     <color name="cardback">#000000</color>
-    <color name="layoutBack">#D2A13B</color>
-    <color name="layoutText">#EFFD9036</color>
+    <color name="layoutBack">#2baefa</color>
+    <color name="layoutText">#efaeaba9</color>
+    <color name="imgback">#ffffffff</color>
 
 </resources>
